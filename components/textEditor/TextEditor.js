@@ -20,7 +20,7 @@ function TextEditor() {
 
 
         db.collection("userDocs").doc(session.user.email).collection("docs").doc(id).set({
-            
+            editorState : convertToRaw(editorState.getCurrentContent())
         } , {merge : true});
     };
 
