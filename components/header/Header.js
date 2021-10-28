@@ -1,6 +1,6 @@
 import Button from "@material-tailwind/react/Button"
 import Icon from "@material-tailwind/react/Icon"
-import { useSession } from "next-auth/client"
+import { signOut , useSession } from "next-auth/client"
 
 
 function Header() {
@@ -62,6 +62,7 @@ function Header() {
 
 
                 <img
+                     onClick={signOut}
                     loading="lazy"
                     className="cursor-pointer h-12 rounded-full ml-2"
                     alt="user"
