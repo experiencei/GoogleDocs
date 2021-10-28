@@ -1,6 +1,7 @@
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css"
 import dynamic from 'next/dynamic';
-// import { Editor } from "react-draft-wysiwyg"
+import { useState } from "react";
+import { EditorState, convertFromRaw, convertToRaw } from 'draft-js';
 
 const Editor = dynamic(
     () => import('react-draft-wysiwyg').then(module => module.Editor), {
@@ -8,9 +9,13 @@ const Editor = dynamic(
   });
 
 function TextEditor() {
+   const [editorState , setEditorState] = useState(EditorState.createEmpty())
+
+
     return (
         <div className="bg-[#F8F9FA] min-h-screen pb-16">
             <Editor 
+               editorState={editorState}
                 toolbarClassName="flex sticky top-0 z-50 !justify-center mx-auto"
                 editorClassName="mt-6 p-10 bg-white shadow-lg max-w-5xl mx-auto mb-12 border"
             />
