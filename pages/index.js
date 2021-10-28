@@ -49,6 +49,21 @@ export default function Home() {
                 </div>
             </div>
           </section>
+
+          <section>
+              <div className="max-w-3xl mx-auto py-8">
+                 <div  className="flex items-center justify-between pb-5">
+                       <h2>My Documents</h2>
+                       <p>Date Created</p>
+
+                       <Icon
+                           name="folder"
+                           size="3xl"
+                           color="gray"
+                       />
+                 </div>
+              </div>
+          </section>
     </div>
   )
 }
