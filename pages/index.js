@@ -14,7 +14,10 @@ export default function Home() {
    const [ session ]= useSession();
    const [showModal , setShowModal] = useState(false);
    const [input , setInput] = useState('');
-   
+
+   const createDocument = () => {
+
+   }
  if(!session) return <Login/>
 
    const modal = (
@@ -66,6 +69,7 @@ export default function Home() {
       </Head>
       
        <Header/>
+        {modal}
           <section  className="bg-[#F8F9FA] pb-10 px-10">
             <div className="max-w-3xl mx-auto">
                 <div className="py-6 flex items-center justify-between">
