@@ -32,6 +32,14 @@ function Doc() {
               </span>
               <div className="flex-grow px-2">
               <h2>{snapshot?.data()?.fileName}</h2>
+                <div>
+                    <p>File</p>
+                    <p>Edit</p>
+                    <p>View</p>
+                    <p>Insert</p>
+                    <p>Format</p>
+                    <p>Tools</p>
+                </div>
               </div>
             </header>
         </div>
