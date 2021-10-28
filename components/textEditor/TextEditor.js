@@ -9,7 +9,7 @@ const Editor = dynamic(
 
 function TextEditor() {
     return (
-        <div>
+        <div className="bg-[#F8F9FA] min-h-screen pb-16">
             <Editor />
         </div>
     )
