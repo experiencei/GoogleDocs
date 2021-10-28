@@ -28,14 +28,14 @@ function Header() {
            className="ml-2 text-gray-700 text-2xl"
            >Docs</h1>
 
-            <div className="flex flex-grow items-center px-5 py-2 bg-gray-100 text-gray-600 rounded-lg">
+            <div className="flex flex-grow items-center px-5 py-2 bg-gray-100 text-gray-600 rounded-lg ">
                  <Icon 
                      name="search"
                      size="3xl"
                      color="gray"
                  />
                  <input
-                      
+                      className="flex-grow px-5 text-base"
                       type="text"
                       placeholder="searh"
                  />
