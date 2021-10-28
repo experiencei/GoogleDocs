@@ -19,7 +19,9 @@ function TextEditor() {
         setEditorState(editorState);
 
 
-        db.collection("userDocs").doc(session.user.email).collection("docs").doc(id)
+        db.collection("userDocs").doc(session.user.email).collection("docs").doc(id).set({
+            
+        } , {merge : true});
     };
 
 
