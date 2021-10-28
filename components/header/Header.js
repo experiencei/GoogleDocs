@@ -27,6 +27,18 @@ function Header() {
            <h1
            className="ml-2 text-gray-700 text-2xl"
            >Docs</h1>
+
+            <div className="flex flex-grow">
+                 <Icon 
+                     name="search"
+                     size="3xl"
+                     color="darkgray"
+                 />
+                 <input
+                      type="text"
+                      placeholder="searh"
+                 />
+            </div>
         </div>
     )
 }
