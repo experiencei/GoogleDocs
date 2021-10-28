@@ -11,14 +11,16 @@ function Doc() {
 
   const [session] = useSession();
   if(!session) return <Login/>;
-  
+
   const router = useRouter();
   const { id } = router.query;
 
-  const [snapshot , loadingSnapshot] = useDocumentOnce(db.collection("userDocs").doc(session?.user?.email).collection("docs").doc(id));
+  const [snapshot , loadingSnapshot] = useDocumentOnce(db.collection("userDocs").doc(session.user.email).collection("docs").doc(id));
 
-  
- 
+//   redirect the user
+ if(!loadingSnapshot && !snapshot?.data()?.fileName)  {
+     router.replace("/")
+ }
 
 
     return (
