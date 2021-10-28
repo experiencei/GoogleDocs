@@ -1,6 +1,6 @@
 function Header() {
     return (
-        <div>
+        <div className="flex items-center">
             
         </div>
     )
