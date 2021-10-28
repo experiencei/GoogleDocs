@@ -133,7 +133,11 @@ export default function Home() {
                  </div>
               </div>
 
-              {snapshot?.docs.map}
+              {snapshot?.docs.map( doc => (
+                <DocumentRow 
+                  key={doc.id}
+                />
+              ))}
           </section>
     </div>
   )
