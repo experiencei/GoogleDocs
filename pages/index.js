@@ -5,12 +5,18 @@ import Icon from "@material-tailwind/react/Icon"
 import Image from "next/image";
 import  { getSession , useSession } from "next-auth/client"
 import Login from '../components/login/Login';
-
+import Modal from "@material-tailwind/react/Modal";
+import ModalBody from "@material-tailwind/react/ModalBody";
+import ModalFooter from "@material-tailwind/react/ModalFooter"
 
 export default function Home() {
    const [ session ]= useSession();
 
  if(!session) return <Login/>
+
+   const modal = (
+     
+   )
 
   return (
     <div className="">
