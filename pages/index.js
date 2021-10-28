@@ -136,6 +136,9 @@ export default function Home() {
               {snapshot?.docs.map( doc => (
                 <DocumentRow 
                   key={doc.id}
+                  id={doc.id}
+                  fileName={doc.data().fileName}
+                  date={doc.data().timestamp}
                 />
               ))}
           </section>
