@@ -28,7 +28,7 @@ function Header() {
            className="ml-2 text-gray-700 text-2xl"
            >Docs</h1>
 
-            <div className="flex flex-grow">
+            <div className="flex flex-grow items-center px-5 py-2">
                  <Icon 
                      name="search"
                      size="3xl"
