@@ -4,6 +4,7 @@ import { useState } from "react";
 import { EditorState, convertFromRaw, convertToRaw } from 'draft-js';
 import db from "../firebase/firebase";
 import { useRouter } from "next/dist/client/router";
+import { useSession } from "next-auth/client";
 
 const Editor = dynamic(
     () => import('react-draft-wysiwyg').then(module => module.Editor), {
@@ -11,6 +12,7 @@ const Editor = dynamic(
   });
 
 function TextEditor() {
+    const [ session ] = useSession()
    const [editorState , setEditorState] = useState(EditorState.createEmpty());
    const router = useRouter();
    const { id } = router.query;
