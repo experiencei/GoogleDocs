@@ -11,7 +11,11 @@ export default function Home() {
       </Head>
       
        <Header/>
+          <section>
+            <div className="max-w-3xl mx-auto">
 
+            </div>
+          </section>
     </div>
   )
 }
