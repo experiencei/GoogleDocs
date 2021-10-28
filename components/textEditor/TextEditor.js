@@ -2,6 +2,8 @@ import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css"
 import dynamic from 'next/dynamic';
 import { useState } from "react";
 import { EditorState, convertFromRaw, convertToRaw } from 'draft-js';
+import db from "../firebase/firebase";
+import { useRouter } from "next/dist/client/router";
 
 const Editor = dynamic(
     () => import('react-draft-wysiwyg').then(module => module.Editor), {
@@ -9,10 +11,15 @@ const Editor = dynamic(
   });
 
 function TextEditor() {
-   const [editorState , setEditorState] = useState(EditorState.createEmpty())
+   const [editorState , setEditorState] = useState(EditorState.createEmpty());
+   const router = useRouter();
+   const { id } = router.query;
 
     const onEditorStateChange = (editorState) => {
-        setEditorState(editorState)
+        setEditorState(editorState);
+
+
+        db.collection("userDocs").doc(session.user.email).collection("docs").doc(id)
     };
 
 
