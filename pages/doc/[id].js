@@ -41,6 +41,10 @@ function Doc() {
                     <p className="option">Tools</p>
                 </div>
               </div>
+
+              <Button>
+                  <Icon name="people" size="md" /> SHARE
+              </Button>
             </header>
         </div>
     )
