@@ -12,6 +12,7 @@ import { useState } from 'react';
 import db from '../components/firebase/firebase';
 import firebase from 'firebase/compat/app';
 import { useCollectionOnce }from "react-firebase-hooks/firestore";
+import DocumentRow from '../components/documentRow/DocumentRow';
 
 
 export default function Home() {
