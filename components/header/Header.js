@@ -28,7 +28,7 @@ function Header() {
            className="ml-2 text-gray-700 text-2xl"
            >Docs</h1>
 
-            <div className="mx-5  md:mx-20  flex flex-grow items-center px-5 py-2 bg-gray-100 text-gray-600 rounded-lg ">
+            <div className="mx-5  md:mx-20  flex flex-grow items-center px-5 py-2 bg-gray-100 text-gray-600 rounded-lg  focus-within:text-gray-600 focus-within:shadow-md">
                  <Icon 
                      name="search"
                      size="3xl"
@@ -40,6 +40,22 @@ function Header() {
                       placeholder="searh"
                  />
             </div>
+
+            <Button
+              color="gray"
+              buttonType="outline"
+              rounded={true}
+              iconOnly={true}
+              ripple="dark"
+              className="ml-5 md:ml-20 h-20 w-20 border-0"
+            
+            >
+                <Icon
+                    color="gray"
+                    size="3xl"
+                    name="apps"
+                />
+                </Button>
         </div>
     )
 }
