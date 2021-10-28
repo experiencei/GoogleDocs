@@ -21,7 +21,39 @@ export default function Home() {
           size="sm"
           active={showModal}
           toggler={() => setShowModal(false)}
-           ></Modal>
+           >
+        <ModalBody>
+          <input
+               value={input}
+               onChange={(e) => setInput(e.target.value)}
+               type="text"
+               className="outline-none w-full"
+               placeholder="Enter name of document..."
+               onKeyDown={(e) => e.key === "Enter"  && createDocument()}
+          />
+        </ModalBody>
+      <ModalFooter>
+          <Button
+             color="blue"
+             buttonType="link"
+             onClick={(e) => setShowModal(false)}
+             ripple="dark"
+          >
+            <Cancel></Cancel>
+          </Button>
+
+          <Button 
+          color="blue"
+          onClick={createDocument}
+          ripple="light"
+          >
+              Create
+          </Button>
+      </ModalFooter>
+
+
+
+           </Modal>
    )
 
   return (
