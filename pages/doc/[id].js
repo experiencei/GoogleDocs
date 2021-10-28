@@ -5,6 +5,7 @@ import { useDocumentOnce } from "react-firebase-hooks/firestore";
 import db from "../../components/firebase/firebase"
 import  { getSession ,signOut , useSession } from "next-auth/client"
 import Login from "../../components/login/Login"
+import TextEditor from "../../components/textEditor/TextEditor";
 
 
 function Doc() {
@@ -61,6 +62,7 @@ function Doc() {
                   alt="image"
               />
             </header>
+            <TextEditor  />
         </div>
     )
 }
