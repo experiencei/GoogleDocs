@@ -1,4 +1,4 @@
-function DocumentRow() {
+function DocumentRow({ id , fileName, date}) {
     return (
         <div>
             
