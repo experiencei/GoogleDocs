@@ -1,5 +1,6 @@
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css"
-import { Editor } from "react-draft-wysiwyg"
+import dynamic from 'next/dynamic';
+// import { Editor } from "react-draft-wysiwyg"
 
 const Editor = dynamic(
     () => import('react-draft-wysiwyg').then(module => module.Editor), {
