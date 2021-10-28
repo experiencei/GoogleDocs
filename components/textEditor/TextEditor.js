@@ -11,11 +11,11 @@ const Editor = dynamic(
 function TextEditor() {
    const [editorState , setEditorState] = useState(EditorState.createEmpty())
 
-    const onEditorStateChange = () => {
-
+    const onEditorStateChange = (editorState) => {
+        setEditorState(editorState)
     };
 
-    
+
     return (
         <div className="bg-[#F8F9FA] min-h-screen pb-16">
             <Editor 
