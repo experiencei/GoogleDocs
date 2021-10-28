@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Header from '../components/header/Header'
 import Button from "@material-tailwind/react/Button"
 import Icon from "@material-tailwind/react/Icon"
-
+import Image from "next/image"
 
 
 export default function Home() {
@@ -33,6 +33,13 @@ export default function Home() {
                     name="more_vert"
                 />
                 </Button>
+                </div>
+
+                <div>
+                   <Image
+                      src="https://links.papareact.com/pju"
+                       layout="fill"
+                   />
                 </div>
             </div>
           </section>
