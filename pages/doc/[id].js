@@ -21,6 +21,8 @@ function Doc() {
                   <Icon name="description" size="5xl" color="blue"/>
 
               </span>
+
+              <h2></h2>
             </header>
         </div>
     )
