@@ -92,7 +92,7 @@ export default function Home() {
 
                 <div>
 
-                <div className="relative h-52 w-40 border-2 cursor-pointer hover:border-blue-700">
+                <div onClick={() => setShowModal(true)} className="relative h-52 w-40 border-2 cursor-pointer hover:border-blue-700">
                   <Image
                         src="https://links.papareact.com/pju"
                         layout="fill"
