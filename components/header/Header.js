@@ -65,7 +65,7 @@ function Header() {
                     loading="lazy"
                     className="cursor-pointer h-12 rounded-full ml-2"
                     alt="user"
-                    src={session.user?.image}
+                    src={session?.user?.image}
                 />
         </header>
     )
