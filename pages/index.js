@@ -43,7 +43,7 @@ export default function Home() {
              onClick={(e) => setShowModal(false)}
              ripple="dark"
           >
-            <Cancel></Cancel>
+            Cancel
           </Button>
 
           <Button 
