@@ -13,7 +13,8 @@ import { useState } from 'react';
 export default function Home() {
    const [ session ]= useSession();
    const [showModal , setShowModal] = useState(false);
-
+   const [input , setInput] = useState('');
+   
  if(!session) return <Login/>
 
    const modal = (
