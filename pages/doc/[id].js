@@ -42,7 +42,16 @@ function Doc() {
                 </div>
               </div>
 
-              <Button>
+              <Button
+                color="lightBlue"
+                buttonType="filled"
+                size="regular"
+                className="hidden md:!inline-flex h-10"
+                rounded={false}
+                block={false}
+                iconOnly={false}
+                ripple="light"
+              >
                   <Icon name="people" size="md" /> SHARE
               </Button>
             </header>
