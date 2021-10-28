@@ -2,10 +2,15 @@ import Head from 'next/head'
 import Header from '../components/header/Header'
 import Button from "@material-tailwind/react/Button"
 import Icon from "@material-tailwind/react/Icon"
-import Image from "next/image"
+import Image from "next/image";
+import  { getSession , useSession } from "next-auth/client"
 
 
 export default function Home() {
+   const [ session ]= useSession();
+
+ if
+
   return (
     <div className="">
       <Head>
