@@ -132,7 +132,7 @@ export default function Home() {
                            color="gray"
                        />
                  </div>
-              </div>
+              
 
               {snapshot?.docs.map( doc => (
                 <DocumentRow 
@@ -142,6 +142,7 @@ export default function Home() {
                   date={doc.data().timestamp}
                 />
               ))}
+              </div>
           </section>
     </div>
   )
