@@ -13,6 +13,7 @@ const Editor = dynamic(
   });
 
 function TextEditor() {
+    
     const [ session ] = useSession()
    const [editorState , setEditorState] = useState(EditorState.createEmpty());
    const router = useRouter();
@@ -34,6 +35,7 @@ function TextEditor() {
             editorState : convertToRaw(editorState.getCurrentContent())
         } , {merge : true});
     };
+
 
 
     return (
