@@ -25,7 +25,7 @@ function TextEditor() {
     {  snapshot?.data()?.editorState && setEditorState(EditorState.createWithContent(convertFromRaw(snapshot?.data()?.editorState)))
       
     }
-  }, []);
+  }, [snapshot]);
 
     const onEditorStateChange = (editorState) => {
         setEditorState(editorState);

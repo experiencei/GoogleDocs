@@ -111,6 +111,7 @@ export default function Home() {
                   <Image
                         src="https://links.papareact.com/pju"
                         layout="fill"
+                        alt="liuf"
                     />
                 </div>
                    
