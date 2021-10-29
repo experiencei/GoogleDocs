@@ -21,8 +21,8 @@ function TextEditor() {
    const [snapshot] =  useDocumentOnce(db.collection("userDocs").doc(session.user.email).collection("docs").doc(id));
 
    useEffect(() => {
-    if (snapshot?.data()?.editorState) {
-      setEditorState(EditorState.createWithContent(convertFromRaw(snapshot?.data()?.editorState)))
+    {  snapshot?.data()?.editorState && setEditorState(EditorState.createWithContent(convertFromRaw(snapshot?.data()?.editorState)))
+      
     }
   }, [snapshot]);
 

@@ -19,7 +19,7 @@ export default function Home() {
    const [ session ]= useSession();
    const [showModal , setShowModal] = useState(false);
    const [input , setInput] = useState('');
-   const [snapshot]  = useCollectionOnce(db.collection("userDocs").doc(session.user.email).collection('docs').orderBy("timestamp" , "desc"))
+   const [snapshot]  = useCollectionOnce(db.collection("userDocs").doc(session?.user?.email).collection('docs').orderBy("timestamp" , "desc"))
 
    const createDocument = () => {
          if(!input) return;
