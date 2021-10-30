@@ -17,12 +17,14 @@ function Doc() {
   const { id } = router.query;
 
   const [snapshot , loadingSnapshot] = useDocumentOnce(db.collection("userDocs").doc(session.user.email).collection("docs").doc(id));
+   
+
+
 
 //   redirect the user
- !loadingSnapshot && !snapshot?.data()?.fileName ?
-     router.replace("/") : null;
- 
-
+//  if(!loadingSnapshot && !snapshot?.data()?.fileName){
+//      router.replace("/")
+//  }
 
     return (
         <div>
