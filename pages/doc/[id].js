@@ -6,7 +6,7 @@ import db from "../../components/firebase/firebase"
 import  { getSession ,signOut , useSession } from "next-auth/client"
 import Login from "../../components/login/Login"
 import TextEditor from "../../components/textEditor/TextEditor";
-
+import Image from "next/image";
 
 function Doc() {
 
@@ -58,10 +58,13 @@ function Doc() {
                   <Icon name="people" size="md" /> SHARE
               </Button>
 
-              <img 
+              <Image 
                   className="rounded-full cursor-pointer h-10 w-10 ml-2"
                   src={session.user.image}
                   alt="image"
+                  width="100"
+                  height="50"
+                  objectFit="contain"
               />
             </header>
             <TextEditor  />
